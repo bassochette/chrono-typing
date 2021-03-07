@@ -1,8 +1,5 @@
+import { TypingChallenge } from '../components/Challenge/TypingChallenge'
 
-export const Home = (): JSX.Element => (
-  <div className="app">
-
-  </div>
-)
+export const Home = (): JSX.Element => (<TypingChallenge />);
 
 export default Home
