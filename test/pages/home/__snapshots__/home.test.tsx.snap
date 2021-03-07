@@ -3,7 +3,39 @@
 exports[`Home page matches snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="app"
-  />
+    class="typingChallenge"
+  >
+    <section
+      class="section timer"
+    >
+      00:00
+    </section>
+    <section
+      class="section statementContainer"
+    >
+      <p
+        class="statement"
+      >
+        Commander, I always used to consider that you had a definite anti-authoritarian streak in you.
+      </p>
+      <p
+        class="source"
+      >
+        Terry Pratchett, Discworld
+      </p>
+    </section>
+    <div
+      class="section answer"
+    >
+      <input
+        class="ok"
+        value=""
+      />
+      <p>
+        accuracy: 100%
+      </p>
+      <p />
+    </div>
+  </div>
 </DocumentFragment>
 `;
