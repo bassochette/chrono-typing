@@ -39,7 +39,7 @@ export const Answer: FunctionComponent<AnswerProps> = ({ challenge, onSuccess })
 
   return (
     <div className={`${css.section} ${css.answer}`}>
-      <input value={attempt} onChange={onStroke} className={ok ? css.ok : css.nok} />
+      <textarea value={attempt} onChange={onStroke} className={ok ? css.ok : css.nok} />
       <p>accuracy: {Math.floor(accuracy)}%</p>
       <p>{strokeHistory}</p>
     </div>
