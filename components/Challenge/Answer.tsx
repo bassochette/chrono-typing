@@ -21,12 +21,12 @@ export const Answer: FunctionComponent<AnswerProps> = ({ challenge, onSuccess })
     if (over) return;
     const input = event.target.value;
     if (startsWith(challenge.statement, input)) {
-      setAttempt(input)
       setOk(true);
     } else {
       setOk(false);
     }
 
+    setAttempt(input)
     setStroke(strokes + 1);
     setAccuracy(attempt.length / strokes * 100);
     setStrokeHistory(strokeHistory + input[input.length-1]);
