@@ -29,9 +29,7 @@ export const Timer: FunctionComponent<TimerProps> = (props) => {
       diff = toTimestampsInSeconds(props.endTime) - toTimestampsInSeconds(props.startTime);
       setMinutes(Math.floor(diff / 60));
       setSeconds(diff % 60)
-      if (!props.endTime) {
-        setChecked(checked+1)
-      }
+      setChecked(checked+1)
     }, 100)
     return () => clearInterval(i)
   }, [checked])
