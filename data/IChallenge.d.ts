@@ -1,6 +1,7 @@
 export enum ChallengeType {
   BOOK = 'book',
   CODE = 'code',
+  TV = 'tv',
 }
 
 export enum Language {
