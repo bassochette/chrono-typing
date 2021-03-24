@@ -42,6 +42,6 @@ export const TypingChallenge: FunctionComponent = () => {
                          challenge={challenge} strokes={strokes}
                          next={next}
     />}
-    <HistoryGraph  refresh={success} />
+    {success && <HistoryGraph  refresh={success} />}
   </div>);
 };
