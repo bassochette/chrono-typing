@@ -7,6 +7,7 @@ import { Timer } from './Timer'
 import { Statement } from './Statement'
 import { Answer } from './Answer'
 import { Success } from './Success'
+import { HistoryGraph } from './HistoryGraph'
 
 const newChallenge = () => sample(challenges)
 
@@ -41,5 +42,6 @@ export const TypingChallenge: FunctionComponent = () => {
                          challenge={challenge} strokes={strokes}
                          next={next}
     />}
+    <HistoryGraph  refresh={success} />
   </div>);
 };
